@@ -5,7 +5,7 @@ var numberOne = ["1"];
 var divisibleBythree;
 var userInputArray = [];
 var containsZero = false;
-var containsOne;
+var containsOne = false;
 var resultUserInput;
 
 
@@ -26,16 +26,21 @@ $(document).ready(function() {
   $("#formNumberwang").submit(function(event) {
     userInput = $("#number").val();
       resultUserInput = userInput;
-      // userInput = userInput.split("");
-      alert (resultUserInput);
+        alert (resultUserInput);
 
-    if
-        ((resultUserInput % 3 === 0)) {
-          
-        }
-        $("#resultNumber").text("I'm afraid I can't do that Dave.");
-      }
-
+  var divisibleByThree = (resultUserInput % 3 === 0);
+    if (divisibleByThree === true) {
+      $("#resultNumber").text("I'm afraid I can't do that Dave.");
+  } else {
+      resultUserInput = resultUserInput.split("");
+        alert (typeof(resultUserInput));
+  };
+    var containsOne = resultUserInput;
+      numberOne.forEach(function(one) {
+        if (userInput.includes(one)) {
+          $("#resultNumber").text("Beep!");
+        };
+      });
 
 
 
