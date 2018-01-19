@@ -2,18 +2,13 @@
 var userInput;
 var numberZero =["0"];
 var numberOne = ["1"];
-var divisibleBythree = false;
-var numberArray = [];
-var containsZero;
+var divisibleBythree;
+var userInputArray = [];
+var containsZero = false;
 var containsOne;
+var resultUserInput;
 
 
-var containsZero = userInput;
-  numberZero.forEach(function(zero) {
-    if (userInput === numberZero) {
-      containsZero = true;
-      };
-    });
 
 var containsOne = userInput;
   numberOne.forEach(function(one) {
@@ -22,19 +17,28 @@ var containsOne = userInput;
   };
 });
 
-var divisibleBythree = function(userInput) {
-  if ((userInput % 3 === 0)) {
-    divisibleBythree = true;
-  }
-}
+
+
+var zeroBeep = userInput;
+
 //user interface logic
 $(document).ready(function() {
   $("#formNumberwang").submit(function(event) {
     userInput = $("#number").val();
-      alert (userInput);
-        userInput = userInput.split("");
-          alert (typeof(userInput));
-            alert (userInput);
+      resultUserInput = userInput;
+      // userInput = userInput.split("");
+      alert (resultUserInput);
+
+    if
+        ((resultUserInput % 3 === 0)) {
+          
+        }
+        $("#resultNumber").text("I'm afraid I can't do that Dave.");
+      }
+
+
+
+
 
     event.preventDefault();
   });
