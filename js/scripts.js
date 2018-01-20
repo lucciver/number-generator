@@ -9,14 +9,9 @@ var containsOne;
 var resultUserInput;
 var displayRange;
 
-
-
-
-
-
 //user interface logic
 $(document).ready(function() {
-  $("#formNumberwang").submit(function(event) {
+  $("#formNumberWang").submit(function(event) {
     userInput = $("#number").val();
       resultUserInput = userInput;
         alert (resultUserInput);
@@ -30,10 +25,10 @@ $(document).ready(function() {
   var containsOne = resultUserInput;
     numberOne.forEach(function(one) {
       if (resultUserInput.includes(one)) {
-        $("#resultNumber").text("beep!");
+          $("#resultNumber").text("beep!");
     } else {
       containsOne = false;
-    };
+      };
     });
   event.preventDefault();
   });
