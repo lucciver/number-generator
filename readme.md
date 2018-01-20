@@ -2,31 +2,31 @@
 
 #### JavaScript/JQuery Exercise for Epicodus, 01/19/2018
 
-#### By _**Tyler Kostelak**_
+#### By **Tyler Kostelak**
 
 ## Description
 
-_This is currently an unfinished application. So far, it asks the user to input a number, and if the number is divisible by three, it displays "I'm afraid I can't do that Dave." If the user inputs a number that contains a one, it displays the text "Beep!" There are more behaviors that I intend to give the application, including:
+This is currently an unfinished application. So far, it asks the user to input a number, and if the number is divisible by three, it displays "I'm afraid I can't do that Dave." If the user inputs a number that contains a one, it displays the text "Beep!" There are more behaviors that I intend to give the application, including:
 
   - If the user inputs a number that contains a zero, it will display "boop!"
   - For any other number the user inputs, it will display a range of numbers that starts at zero and counts up to the number the user inputs.
 
-  Keep in mind, the actions of the page are prioritized by importance to avoid conflicting logic._
+  Keep in mind, the actions of the page are prioritized by importance to avoid conflicting logic.
 
 ## Setup/Installation Requirements
 
-* _Clone this repository_
-* _Navigate to the index file and open it in your browser (chrome is preferred._
-* _Open the scripts.js file to in your preferred text editor to view the javscript/Jquery/_
-* _Open the javascript console in your browser in order to explore the page further._
+* Clone this repository
+* Navigate to the index file and open it in your browser (chrome is preferred.
+* Open the scripts.js file to in your preferred text editor to view the javscript and JQuery.
+* Open the javascript console in your browser in order to explore the page further.
 
 ## Known Bugs
 
-_When I add the containsZero function to my code, the error .includes is not defined prevents the code from executing._
+When I add the containsZero function to my code, the error .includes is not defined prevents the code from executing.
 
 ## Support and contact details
 
-_If you have suggestions for how to help me make the additions I described, or if you have other feedback, please feel free to contact me at tkostelak@gmail.com. All feedback is welcome, keep in mind that the primary focus of this project is Javascript/Jquery, so I am not necessarily looking for HTML/CSS advice. Thanks for understanding!_
+If you have suggestions for how to help me make the additions I described, or if you have other feedback, please feel free to contact me at tkostelak@gmail.com. All feedback is welcome, keep in mind that the primary focus of this project is Javascript/Jquery, so I am not necessarily looking for HTML/CSS advice. Thanks for understanding!
 
 ## Technologies Used
 
