@@ -1,35 +1,28 @@
 // business logic
 var userInput;
-var numberZero =["0"];
-var numberOne = ["1"];
-var divisibleBythree;
-var userInputArray = [];
-var containsZero;
-var containsOne;
-var resultUserInput;
-var displayRange;
 
+var numAnalyze = function(number) {
+  var numberArray = userInput.split("");
+  if (number % 3 === 0) {
+    return "I'm afraid I can't do that Dave.";
+  } else if (numberArray.includes("1")){
+      return "boop!";
+  } else if (numberArray.includes("0")){
+      return "beep!";
+  } else {
+      return number;
+      console.log(userInput);
+  };
+};
+
+var numberCount = function(number) {
+  
+};
 //user interface logic
 $(document).ready(function() {
   $("#formNumberWang").submit(function(event) {
     userInput = $("#number").val();
-      resultUserInput = userInput;
-        alert (resultUserInput);
-
-  var divisibleByThree = (resultUserInput % 3 === 0);
-    if (divisibleByThree === true) {
-      $("#resultNumber").text("I'm afraid I can't do that Dave.");
-    } else {
-      resultUserInput = resultUserInput.split("");
-    };
-  var containsOne = resultUserInput;
-    numberOne.forEach(function(one) {
-      if (resultUserInput.includes(one)) {
-          $("#resultNumber").text("beep!");
-    } else {
-      containsOne = false;
-      };
-    });
+      console.log(userInput)
   event.preventDefault();
+    });
   });
-});
