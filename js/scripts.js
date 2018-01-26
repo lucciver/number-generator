@@ -1,25 +1,24 @@
 // business logic
 // var userInput;
-var userInput;
 
-var rangeNumbers = [];
+
+
 
 
 
 
 var numAnalyze = function(number) {
-
-  if (number % 3 === 0) {
+  if (number != 0 && number % 3 === 0) {
     return "I'm afraid I can't do that Dave.";
-  } else if (rangeNumbers.includes("1")){
+  } else if (number.toString().indexOf("1") != -1) {
       return "boop!";
-  } else if (rangeNumbers.includes("0")){
+  } else if (number.toString().indexOf("1") != -1) {
       return "beep!";
   } else {
       return number;
 
-  };
-};
+  }
+}
 
 var numberCount = function(number) {
 
@@ -29,15 +28,27 @@ $(document).ready(function() {
   $("#formNumberWang").submit(function(event) {
     event.preventDefault();
 
-    var rangeNumbers = [];
     userInput = $("#number").val();
 
+    var rangeNumbers = [];
+
     for (var currentNumber = 0; currentNumber <= userInput; currentNumber += 1) {
-    rangeNumbers.push(numAnalyze(number));
+      rangeNumbers += currentNumber;
     }
 
-    $("#resultNumber").text(rangeNumbers);
-    console.log(number);
+    var resultNumbers = numAnalyze(rangeNumbers);
+
+    $("#resultNumber").text(resultNumbers);
+
+
+
+    console.log(resultNumbers);
+
+
+
+
+
+
 
 
 
