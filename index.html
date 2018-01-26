@@ -9,18 +9,27 @@
   </head>
   <body>
     <div class="container">
-      <h1>That's Number Generator!</h1>
-
+      <div class="jumbotron">
+      <h1 id ="titleFont">That's Number Generator!</h1>
+      </div>
+        <br>
+        <h4>When you input a number, the page will count up to your number for you, and use rules to replace some of the numbers. Can you figure out what the rules are? </h4>
+        <br>
+        <br>
         <form id="formNumberWang">
           <div class="form-group">
-            <label for="number">Enter any number in order to play!</label>
+            <label for="number"><h5><strong>Enter any number in order to play!</h5></strong></label>
             <input id="number" type="numberInput">
           </div>
 
-        <button type="submitNumber" class="button">Submit number!</button>
+        <button type="button" class="btn btn-primary" id="buttonSubmit">Submit Number!</button>
         </form>
 
         <div id="resultNumber">
+          <br>
+          <br>
+          <h3 id="resultsText"></h3>
+
         </div>
     </div>
   </body>

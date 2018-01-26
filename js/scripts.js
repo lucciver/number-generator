@@ -3,20 +3,20 @@ var rangeNumbers = [];
 
 var numAnalyze = function(number) {
   if (number != 0 && number % 3 === 0) {
-    return "I'm afraid I can't do that Dave";
+    return " I'm afraid I can't do that Dave";
   } else if (number === 1 || number.toString().includes(1) === true) {
-      return "boop!";
+      return " boop!";
   } else if (number === 0 || number.toString().includes(0) === true) {
-      return "beep!";
+      return " beep!";
   } else {
-      return number;
+      return " " + number.toString();
 
   }
 }
 
 //user interface logic
 $(document).ready(function() {
-  $("#formNumberWang").submit(function(event) {
+  $("#buttonSubmit").click(function(event) {
     event.preventDefault();
 
     userInput = $("#number").val();
@@ -24,30 +24,9 @@ $(document).ready(function() {
     for (var startNumber = 0; startNumber <= userInput; startNumber += 1) {
 
       rangeNumbers.push(numAnalyze(startNumber));
-    }
+    };
 
-    $("#resultNumber").text(rangeNumbers);
+  $("#resultNumber h3").text(rangeNumbers);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    });
   });
+});

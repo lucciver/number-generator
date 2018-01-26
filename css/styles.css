@@ -1,1 +1,21 @@
+.jumbotron {
+  background-color: greenYellow;
+  border-style: dotted;
+}
 
+#titleFont {
+  font-family: chalkduster;
+}
+
+body {
+  background-color: powderBlue;
+}
+
+#buttonSubmit {
+  margin-left: 325px;
+}
+
+#resultsText {
+  font-family: chalkduster;
+  border-width: medium;
+}
