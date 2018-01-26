@@ -1,5 +1,12 @@
 // business logic
+// var userInput;
 var userInput;
+var rangeNumbers= [];
+
+alert(rangeNumbers);
+
+
+
 
 var numAnalyze = function(number) {
   var numberArray = userInput.split("");
@@ -16,13 +23,22 @@ var numAnalyze = function(number) {
 };
 
 var numberCount = function(number) {
-  
+
 };
 //user interface logic
 $(document).ready(function() {
   $("#formNumberWang").submit(function(event) {
+    event.preventDefault();
     userInput = $("#number").val();
+
+    var rangeNumbers= userInput;
+    for (var currentNumber = 0; currentNumber <= userInput; currentNumber += 1) {
+
+      rangeNumbers += currentNumber;
+    }
       console.log(userInput)
-  event.preventDefault();
+      console.log(rangeNumbers);
+
+
     });
   });
