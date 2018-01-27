@@ -10,9 +10,8 @@ var numAnalyze = function(number) {
       return " beep!";
   } else {
       return " " + number.toString();
-
-  }
-}
+  };
+};
 
 //user interface logic
 $(document).ready(function() {
@@ -26,7 +25,7 @@ $(document).ready(function() {
       rangeNumbers.push(numAnalyze(startNumber));
     };
 
-  $("#resultNumber h3").text(rangeNumbers);
+    $("#resultNumber h3").text(rangeNumbers);
 
   });
 });

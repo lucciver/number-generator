@@ -1,32 +1,30 @@
 # Number Generator
 
-#### JavaScript/JQuery Exercise for Epicodus, 01/19/2018
+#### JavaScript/JQuery Exercise for Epicodus, 01/26/2018
 
 #### By **Tyler Kostelak**
 
 ## Description
 
-This is currently an unfinished application. So far, it asks the user to input a number, and if the number is divisible by three, it displays "I'm afraid I can't do that Dave." If the user inputs a number that contains a one, it displays the text "Beep!" There are more behaviors that I intend to give the application, including:
-
-  - If the user inputs a number that contains a zero, it will display "boop!"
-  - For any other number the user inputs, it will display a range of numbers that starts at zero and counts up to the number the user inputs.
-
-  Keep in mind, the actions of the page are prioritized by importance to avoid conflicting logic.
+This web page prompts the user to enter a number, and then counts up to the inputted number. Javascript branching replaces some of the digits according to the following rules (from highest to lowest priority):
+* If the number is divisible by three, replace the number with "I'm afraid I can't do that Dave."
+* If the number contains a 1, replace the number with "boop!"
+* If the number contains a 0, replace the number with "beep!"
 
 ## Setup/Installation Requirements
 
 * Clone this repository
-* Navigate to the index file and open it in your browser (chrome is preferred.
-* Open the scripts.js file to in your preferred text editor to view the javscript and JQuery.
+* Navigate to the index file and open it in your browser (Chrome is preferred).
+* Open the scripts.js file to in your preferred text editor to view the javascript scripts.
 * Open the javascript console in your browser in order to explore the page further.
 
 ## Known Bugs
 
-When I add the containsZero function to my code, the error .includes is not defined prevents the code from executing.
+There are no known bugs at this time.
 
 ## Support and contact details
 
-If you have suggestions for how to help me make the additions I described, or if you have other feedback, please feel free to contact me at tkostelak@gmail.com. All feedback is welcome, keep in mind that the primary focus of this project is Javascript/Jquery, so I am not necessarily looking for HTML/CSS advice. Thanks for understanding!
+If you have suggestions for how to help me make any additions, or if you have other feedback, please feel free to contact me at tkostelak@gmail.com. All feedback is welcome, keep in mind that the primary focus of this project is Javascript/Jquery, so I am not necessarily looking for HTML/CSS advice. Thanks for understanding!
 
 ## Technologies Used
 
